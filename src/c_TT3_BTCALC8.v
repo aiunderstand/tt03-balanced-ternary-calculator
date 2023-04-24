@@ -1,4 +1,4 @@
-module c_TT3_BTCALC8 (
+module c_TT3_BTCALC8(
      input [7:0] io_in,
      output [7:0] io_out
 );
