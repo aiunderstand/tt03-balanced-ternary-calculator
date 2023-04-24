@@ -335,17 +335,17 @@ f_3PT_bet LogicGate_2 (
 
 c_BTS1 SavedGate_0 (
 .io_in({tnet_15,tnet_14}),
-.io_out({tnet_18,})
+.io_out({tnet_18})
 );
 
 c_BTM1 SavedGate_1 (
 .io_in({tnet_4,tnet_0}),
-.io_out({tnet_12,})
+.io_out({tnet_12})
 );
 
 c_BTM1 SavedGate_2 (
 .io_in({tnet_7,tnet_3}),
-.io_out({tnet_19,})
+.io_out({tnet_19})
 );
 
 c_BTM1 SavedGate_3 (
