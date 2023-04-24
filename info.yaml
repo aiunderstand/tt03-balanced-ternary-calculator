@@ -6,8 +6,8 @@ project:
 # If using an HDL, set wokwi_id as 0 and uncomment and list your source files here. 
 # Source files must be in ./src and you must list each source file separately
 source_files:  # source files must be in ./src     
-    - c_TT3-BTCALC8_singlefile.v    
-top_module:  "c_TT3-BTCALC8"      # put the name of your top module here, make it unique by prepending your github username
+    - c_TT3_BTCALC8.v    
+top_module:  "c_TT3_BTCALC8"      # put the name of your top module here, make it unique by prepending your github username
 
 # Keep a track of the submission yaml
 yaml_version: 3.0
