@@ -1,4 +1,4 @@
-module c_TT3_BTCALC8(
+module c_TT3_BTCalc8 (
      input [7:0] io_in,
      output [7:0] io_out
 );
@@ -34,22 +34,22 @@ assign io_out[5:4] = tnet_21;
 assign io_out[7:6] = tnet_22;
 
 c_BTDeselect4 SavedGate_0 (
-.io_in({bnet_18,tnet_17,tnet_16,tnet_15,tnet_14,tnet_13,tnet_12,tnet_11,tnet_10,tnet_9[1]}),
+.io_in({tnet_17,tnet_16,tnet_15,tnet_14,bnet_18,tnet_7[1],tnet_10,tnet_11,tnet_12,tnet_13}),
 .io_out({tnet_22,tnet_21,tnet_20,tnet_19})
 );
 
 c_BTM2 SavedGate_1 (
-.io_in({tnet_7,tnet_5,tnet_3,tnet_0}),
-.io_out({tnet_13,tnet_12,tnet_11,tnet_10})
+.io_in({tnet_9,tnet_5,tnet_3,tnet_1}),
+.io_out({tnet_10,tnet_11,tnet_12,tnet_13})
 );
 
 c_BTA4 SavedGate_2 (
-.io_in({tnet_6,tnet_4,tnet_2,tnet_1}),
+.io_in({tnet_8,tnet_4,tnet_2,tnet_0}),
 .io_out({tnet_17,tnet_16,tnet_15,tnet_14})
 );
 
 c_BINV SavedGate_3 (
-.io_in({tnet_8[1]}),
+.io_in({tnet_6[1]}),
 .io_out({bnet_18})
 );
 
@@ -90,14 +90,14 @@ assign io_out[1:0] = tnet_4;
 assign io_out[3:2] = tnet_5;
 
 f_RDC_bet LogicGate_0 (
-.in_1(tnet_3),
-.in_0(tnet_0),
+.in_1(tnet_0),
+.in_0(tnet_3),
 .out_0(tnet_4)
 );
 
 f_7PB_bet LogicGate_1 (
-.in_1(tnet_2),
-.in_0(tnet_1),
+.in_1(tnet_1),
+.in_0(tnet_2),
 .out_0(tnet_5)
 );
 
@@ -128,22 +128,22 @@ assign io_out[5:4] = tnet_10;
 assign io_out[7:6] = tnet_11;
 
 c_BTA SavedGate_0 (
-.io_in({tnet_2,tnet_0}),
-.io_out({tnet_5,tnet_4})
+.io_in({tnet_3,tnet_1}),
+.io_out({tnet_11,tnet_4})
 );
 
 c_BTA SavedGate_1 (
-.io_in({tnet_3,tnet_1}),
-.io_out({tnet_11,tnet_6})
+.io_in({tnet_2,tnet_0}),
+.io_out({tnet_5,tnet_6})
 );
 
 c_BTA SavedGate_2 (
-.io_in({tnet_6,tnet_4}),
+.io_in({tnet_4,tnet_5}),
 .io_out({tnet_10,tnet_7})
 );
 
 c_BTA SavedGate_3 (
-.io_in({tnet_7,tnet_5}),
+.io_in({tnet_7,tnet_6}),
 .io_out({tnet_9,tnet_8})
 );
 
@@ -190,74 +190,74 @@ assign io_out[5:4] = tnet_26;
 assign io_out[7:6] = tnet_27;
 
 f_RD4_bet LogicGate_0 (
-.in_1(tnet_3),
-.in_0({bnet_7,!bnet_7}),
+.in_1({bnet_7,!bnet_7}),
+.in_0(tnet_3),
 .out_0(tnet_16)
 );
 
 f_RD4_bet LogicGate_1 (
-.in_1(tnet_2),
-.in_0({bnet_6,!bnet_6}),
+.in_1({bnet_6,!bnet_6}),
+.in_0(tnet_2),
 .out_0(tnet_17)
 );
 
 f_RD4_bet LogicGate_2 (
-.in_1(tnet_1),
-.in_0({bnet_5,!bnet_5}),
+.in_1({bnet_5,!bnet_5}),
+.in_0(tnet_1),
 .out_0(tnet_18)
 );
 
 f_RD4_bet LogicGate_3 (
-.in_1(tnet_0),
-.in_0({bnet_4,!bnet_4}),
+.in_1({bnet_4,!bnet_4}),
+.in_0(tnet_0),
 .out_0(tnet_19)
 );
 
 f_RD4_bet LogicGate_4 (
-.in_1(tnet_13),
-.in_0({bnet_8,!bnet_8}),
+.in_1({bnet_8,!bnet_8}),
+.in_0(tnet_13),
 .out_0(tnet_20)
 );
 
 f_RD4_bet LogicGate_5 (
-.in_1(tnet_12),
-.in_0({bnet_11,!bnet_11}),
+.in_1({bnet_11,!bnet_11}),
+.in_0(tnet_12),
 .out_0(tnet_21)
 );
 
 f_RD4_bet LogicGate_6 (
-.in_1(tnet_15),
-.in_0({bnet_10,!bnet_10}),
+.in_1({bnet_10,!bnet_10}),
+.in_0(tnet_15),
 .out_0(tnet_22)
 );
 
 f_RD4_bet LogicGate_7 (
-.in_1(tnet_14),
-.in_0({bnet_9,!bnet_9}),
+.in_1({bnet_9,!bnet_9}),
+.in_0(tnet_14),
 .out_0(tnet_23)
 );
 
 f_VP0_bet LogicGate_8 (
-.in_1(tnet_21),
-.in_0(tnet_19),
+.in_1(tnet_19),
+.in_0(tnet_21),
 .out_0(tnet_24)
 );
 
 f_VP0_bet LogicGate_9 (
-.in_1(tnet_20),
-.in_0(tnet_18),
+.in_1(tnet_18),
+.in_0(tnet_20),
 .out_0(tnet_25)
 );
 
 f_VP0_bet LogicGate_10 (
-.in_1(tnet_23),
-.in_0(tnet_17),
+.in_1(tnet_17),
+.in_0(tnet_23),
 .out_0(tnet_26)
 );
 
 f_VP0_bet LogicGate_11 (
-.in_1(tnet_22),
-.in_0(tnet_16),
+.in_1(tnet_16),
+.in_0(tnet_22),
 .out_0(tnet_27)
 );
 
@@ -276,8 +276,8 @@ wire [1:0] tnet_2;
 assign io_out[1:0] = tnet_2;
 
 f_PD5_bet LogicGate_0 (
-.in_1(tnet_1),
-.in_0(tnet_0),
+.in_1(tnet_0),
+.in_0(tnet_1),
 .out_0(tnet_2)
 );
 
@@ -316,36 +316,36 @@ assign io_out[5:4] = tnet_18;
 assign io_out[7:6] = tnet_19;
 
 f_CDR_bet LogicGate_0 (
-.in_1(tnet_8),
-.in_0(tnet_11),
+.in_1(tnet_11),
+.in_0(tnet_8),
 .out_0(tnet_16)
 );
 
 f_RPC_bet LogicGate_1 (
-.in_1(tnet_10),
-.in_0(tnet_9),
+.in_1(tnet_9),
+.in_0(tnet_10),
 .out_0(tnet_8)
 );
 
 f_3PT_bet LogicGate_2 (
-.in_1(tnet_13),
-.in_0(tnet_12),
+.in_1(tnet_12),
+.in_0(tnet_13),
 .out_0(tnet_9)
 );
 
 c_BTS1 SavedGate_0 (
 .io_in({tnet_15,tnet_14}),
-.io_out({tnet_18})
+.io_out({tnet_10})
 );
 
 c_BTM1 SavedGate_1 (
 .io_in({tnet_4,tnet_0}),
-.io_out({tnet_12})
+.io_out({tnet_11})
 );
 
 c_BTM1 SavedGate_2 (
 .io_in({tnet_7,tnet_3}),
-.io_out({tnet_19})
+.io_out({tnet_13})
 );
 
 c_BTM1 SavedGate_3 (
@@ -373,8 +373,8 @@ wire [1:0] tnet_2;
 assign io_out[1:0] = tnet_2;
 
 f_7PB_bet LogicGate_0 (
-.in_1(tnet_1),
-.in_0(tnet_0),
+.in_1(tnet_0),
+.in_0(tnet_1),
 .out_0(tnet_2)
 );
 
@@ -385,7 +385,9 @@ module f_2 (
      output wire out_0
      );
 
-     assign out_0 = (in_0 == 0);
+     assign out_0 = 
+(in_0 == 0)
+;
 endmodule
 
 module f_3PT_bet (
@@ -394,7 +396,17 @@ module f_3PT_bet (
      output wire[1:0] out_0
      );
 
-     assign out_0 = (in_0 == 2'b01) & (in_1 == 2'b01) ? 2'b10 :(in_0 == 2'b01) & (in_1 == 2'b11) ? 2'b11 :(in_0 == 2'b01) & (in_1 == 2'b10) ? 2'b10 :(in_0 == 2'b11) & (in_1 == 2'b01) ? 2'b01 :(in_0 == 2'b11) & (in_1 == 2'b11) ? 2'b11 :(in_0 == 2'b11) & (in_1 == 2'b10) ? 2'b10 :(in_0 == 2'b10) & (in_1 == 2'b01) ? 2'b01 :(in_0 == 2'b10) & (in_1 == 2'b11) ? 2'b11 :(in_0 == 2'b10) & (in_1 == 2'b10) ? 2'b01 :2'b00;
+     assign out_0 = 
+(in_0 == 2'b01) & (in_1 == 2'b01) ? 2'b10 :
+(in_0 == 2'b01) & (in_1 == 2'b11) ? 2'b11 :
+(in_0 == 2'b01) & (in_1 == 2'b10) ? 2'b10 :
+(in_0 == 2'b11) & (in_1 == 2'b01) ? 2'b01 :
+(in_0 == 2'b11) & (in_1 == 2'b11) ? 2'b11 :
+(in_0 == 2'b11) & (in_1 == 2'b10) ? 2'b10 :
+(in_0 == 2'b10) & (in_1 == 2'b01) ? 2'b01 :
+(in_0 == 2'b10) & (in_1 == 2'b11) ? 2'b11 :
+(in_0 == 2'b10) & (in_1 == 2'b10) ? 2'b01 :
+2'b00;
 endmodule
 
 module f_7PB_bet (
@@ -403,7 +415,17 @@ module f_7PB_bet (
      output wire[1:0] out_0
      );
 
-     assign out_0 = (in_0 == 2'b01) & (in_1 == 2'b01) ? 2'b10 :(in_0 == 2'b01) & (in_1 == 2'b11) ? 2'b01 :(in_0 == 2'b01) & (in_1 == 2'b10) ? 2'b11 :(in_0 == 2'b11) & (in_1 == 2'b01) ? 2'b01 :(in_0 == 2'b11) & (in_1 == 2'b11) ? 2'b11 :(in_0 == 2'b11) & (in_1 == 2'b10) ? 2'b10 :(in_0 == 2'b10) & (in_1 == 2'b01) ? 2'b11 :(in_0 == 2'b10) & (in_1 == 2'b11) ? 2'b10 :(in_0 == 2'b10) & (in_1 == 2'b10) ? 2'b01 :2'b00;
+     assign out_0 = 
+(in_0 == 2'b01) & (in_1 == 2'b01) ? 2'b10 :
+(in_0 == 2'b01) & (in_1 == 2'b11) ? 2'b01 :
+(in_0 == 2'b01) & (in_1 == 2'b10) ? 2'b11 :
+(in_0 == 2'b11) & (in_1 == 2'b01) ? 2'b01 :
+(in_0 == 2'b11) & (in_1 == 2'b11) ? 2'b11 :
+(in_0 == 2'b11) & (in_1 == 2'b10) ? 2'b10 :
+(in_0 == 2'b10) & (in_1 == 2'b01) ? 2'b11 :
+(in_0 == 2'b10) & (in_1 == 2'b11) ? 2'b10 :
+(in_0 == 2'b10) & (in_1 == 2'b10) ? 2'b01 :
+2'b00;
 endmodule
 
 module f_CDR_bet (
@@ -412,7 +434,17 @@ module f_CDR_bet (
      output wire[1:0] out_0
      );
 
-     assign out_0 = (in_0 == 2'b01) & (in_1 == 2'b01) ? 2'b11 :(in_0 == 2'b01) & (in_1 == 2'b11) ? 2'b11 :(in_0 == 2'b01) & (in_1 == 2'b10) ? 2'b10 :(in_0 == 2'b11) & (in_1 == 2'b01) ? 2'b11 :(in_0 == 2'b11) & (in_1 == 2'b11) ? 2'b11 :(in_0 == 2'b11) & (in_1 == 2'b10) ? 2'b11 :(in_0 == 2'b10) & (in_1 == 2'b01) ? 2'b01 :(in_0 == 2'b10) & (in_1 == 2'b11) ? 2'b11 :(in_0 == 2'b10) & (in_1 == 2'b10) ? 2'b11 :2'b00;
+     assign out_0 = 
+(in_0 == 2'b01) & (in_1 == 2'b01) ? 2'b11 :
+(in_0 == 2'b01) & (in_1 == 2'b11) ? 2'b11 :
+(in_0 == 2'b01) & (in_1 == 2'b10) ? 2'b10 :
+(in_0 == 2'b11) & (in_1 == 2'b01) ? 2'b11 :
+(in_0 == 2'b11) & (in_1 == 2'b11) ? 2'b11 :
+(in_0 == 2'b11) & (in_1 == 2'b10) ? 2'b11 :
+(in_0 == 2'b10) & (in_1 == 2'b01) ? 2'b01 :
+(in_0 == 2'b10) & (in_1 == 2'b11) ? 2'b11 :
+(in_0 == 2'b10) & (in_1 == 2'b10) ? 2'b11 :
+2'b00;
 endmodule
 
 module f_PD5_bet (
@@ -421,7 +453,17 @@ module f_PD5_bet (
      output wire[1:0] out_0
      );
 
-     assign out_0 = (in_0 == 2'b01) & (in_1 == 2'b01) ? 2'b10 :(in_0 == 2'b01) & (in_1 == 2'b11) ? 2'b11 :(in_0 == 2'b01) & (in_1 == 2'b10) ? 2'b01 :(in_0 == 2'b11) & (in_1 == 2'b01) ? 2'b11 :(in_0 == 2'b11) & (in_1 == 2'b11) ? 2'b11 :(in_0 == 2'b11) & (in_1 == 2'b10) ? 2'b11 :(in_0 == 2'b10) & (in_1 == 2'b01) ? 2'b01 :(in_0 == 2'b10) & (in_1 == 2'b11) ? 2'b11 :(in_0 == 2'b10) & (in_1 == 2'b10) ? 2'b10 :2'b00;
+     assign out_0 = 
+(in_0 == 2'b01) & (in_1 == 2'b01) ? 2'b10 :
+(in_0 == 2'b01) & (in_1 == 2'b11) ? 2'b11 :
+(in_0 == 2'b01) & (in_1 == 2'b10) ? 2'b01 :
+(in_0 == 2'b11) & (in_1 == 2'b01) ? 2'b11 :
+(in_0 == 2'b11) & (in_1 == 2'b11) ? 2'b11 :
+(in_0 == 2'b11) & (in_1 == 2'b10) ? 2'b11 :
+(in_0 == 2'b10) & (in_1 == 2'b01) ? 2'b01 :
+(in_0 == 2'b10) & (in_1 == 2'b11) ? 2'b11 :
+(in_0 == 2'b10) & (in_1 == 2'b10) ? 2'b10 :
+2'b00;
 endmodule
 
 module f_RD4_bet (
@@ -430,7 +472,17 @@ module f_RD4_bet (
      output wire[1:0] out_0
      );
 
-     assign out_0 = (in_0 == 2'b01) & (in_1 == 2'b01) ? 2'b11 :(in_0 == 2'b01) & (in_1 == 2'b11) ? 2'b11 :(in_0 == 2'b01) & (in_1 == 2'b10) ? 2'b01 :(in_0 == 2'b11) & (in_1 == 2'b01) ? 2'b11 :(in_0 == 2'b11) & (in_1 == 2'b11) ? 2'b11 :(in_0 == 2'b11) & (in_1 == 2'b10) ? 2'b11 :(in_0 == 2'b10) & (in_1 == 2'b01) ? 2'b11 :(in_0 == 2'b10) & (in_1 == 2'b11) ? 2'b11 :(in_0 == 2'b10) & (in_1 == 2'b10) ? 2'b10 :2'b00;
+     assign out_0 = 
+(in_0 == 2'b01) & (in_1 == 2'b01) ? 2'b11 :
+(in_0 == 2'b01) & (in_1 == 2'b11) ? 2'b11 :
+(in_0 == 2'b01) & (in_1 == 2'b10) ? 2'b01 :
+(in_0 == 2'b11) & (in_1 == 2'b01) ? 2'b11 :
+(in_0 == 2'b11) & (in_1 == 2'b11) ? 2'b11 :
+(in_0 == 2'b11) & (in_1 == 2'b10) ? 2'b11 :
+(in_0 == 2'b10) & (in_1 == 2'b01) ? 2'b11 :
+(in_0 == 2'b10) & (in_1 == 2'b11) ? 2'b11 :
+(in_0 == 2'b10) & (in_1 == 2'b10) ? 2'b10 :
+2'b00;
 endmodule
 
 module f_RDC_bet (
@@ -439,7 +491,17 @@ module f_RDC_bet (
      output wire[1:0] out_0
      );
 
-     assign out_0 = (in_0 == 2'b01) & (in_1 == 2'b01) ? 2'b01 :(in_0 == 2'b01) & (in_1 == 2'b11) ? 2'b11 :(in_0 == 2'b01) & (in_1 == 2'b10) ? 2'b11 :(in_0 == 2'b11) & (in_1 == 2'b01) ? 2'b11 :(in_0 == 2'b11) & (in_1 == 2'b11) ? 2'b11 :(in_0 == 2'b11) & (in_1 == 2'b10) ? 2'b11 :(in_0 == 2'b10) & (in_1 == 2'b01) ? 2'b11 :(in_0 == 2'b10) & (in_1 == 2'b11) ? 2'b11 :(in_0 == 2'b10) & (in_1 == 2'b10) ? 2'b10 :2'b00;
+     assign out_0 = 
+(in_0 == 2'b01) & (in_1 == 2'b01) ? 2'b01 :
+(in_0 == 2'b01) & (in_1 == 2'b11) ? 2'b11 :
+(in_0 == 2'b01) & (in_1 == 2'b10) ? 2'b11 :
+(in_0 == 2'b11) & (in_1 == 2'b01) ? 2'b11 :
+(in_0 == 2'b11) & (in_1 == 2'b11) ? 2'b11 :
+(in_0 == 2'b11) & (in_1 == 2'b10) ? 2'b11 :
+(in_0 == 2'b10) & (in_1 == 2'b01) ? 2'b11 :
+(in_0 == 2'b10) & (in_1 == 2'b11) ? 2'b11 :
+(in_0 == 2'b10) & (in_1 == 2'b10) ? 2'b10 :
+2'b00;
 endmodule
 
 module f_RPC_bet (
@@ -448,7 +510,17 @@ module f_RPC_bet (
      output wire[1:0] out_0
      );
 
-     assign out_0 = (in_0 == 2'b01) & (in_1 == 2'b01) ? 2'b01 :(in_0 == 2'b01) & (in_1 == 2'b11) ? 2'b11 :(in_0 == 2'b01) & (in_1 == 2'b10) ? 2'b11 :(in_0 == 2'b11) & (in_1 == 2'b01) ? 2'b01 :(in_0 == 2'b11) & (in_1 == 2'b11) ? 2'b11 :(in_0 == 2'b11) & (in_1 == 2'b10) ? 2'b10 :(in_0 == 2'b10) & (in_1 == 2'b01) ? 2'b11 :(in_0 == 2'b10) & (in_1 == 2'b11) ? 2'b11 :(in_0 == 2'b10) & (in_1 == 2'b10) ? 2'b10 :2'b00;
+     assign out_0 = 
+(in_0 == 2'b01) & (in_1 == 2'b01) ? 2'b01 :
+(in_0 == 2'b01) & (in_1 == 2'b11) ? 2'b11 :
+(in_0 == 2'b01) & (in_1 == 2'b10) ? 2'b11 :
+(in_0 == 2'b11) & (in_1 == 2'b01) ? 2'b01 :
+(in_0 == 2'b11) & (in_1 == 2'b11) ? 2'b11 :
+(in_0 == 2'b11) & (in_1 == 2'b10) ? 2'b10 :
+(in_0 == 2'b10) & (in_1 == 2'b01) ? 2'b11 :
+(in_0 == 2'b10) & (in_1 == 2'b11) ? 2'b11 :
+(in_0 == 2'b10) & (in_1 == 2'b10) ? 2'b10 :
+2'b00;
 endmodule
 
 module f_VP0_bet (
@@ -457,6 +529,16 @@ module f_VP0_bet (
      output wire[1:0] out_0
      );
 
-     assign out_0 = (in_0 == 2'b01) & (in_1 == 2'b01) ? 2'b01 :(in_0 == 2'b01) & (in_1 == 2'b11) ? 2'b01 :(in_0 == 2'b01) & (in_1 == 2'b10) ? 2'b01 :(in_0 == 2'b11) & (in_1 == 2'b01) ? 2'b01 :(in_0 == 2'b11) & (in_1 == 2'b11) ? 2'b11 :(in_0 == 2'b11) & (in_1 == 2'b10) ? 2'b10 :(in_0 == 2'b10) & (in_1 == 2'b01) ? 2'b01 :(in_0 == 2'b10) & (in_1 == 2'b11) ? 2'b10 :(in_0 == 2'b10) & (in_1 == 2'b10) ? 2'b10 :2'b00;
+     assign out_0 = 
+(in_0 == 2'b01) & (in_1 == 2'b01) ? 2'b01 :
+(in_0 == 2'b01) & (in_1 == 2'b11) ? 2'b01 :
+(in_0 == 2'b01) & (in_1 == 2'b10) ? 2'b01 :
+(in_0 == 2'b11) & (in_1 == 2'b01) ? 2'b01 :
+(in_0 == 2'b11) & (in_1 == 2'b11) ? 2'b11 :
+(in_0 == 2'b11) & (in_1 == 2'b10) ? 2'b10 :
+(in_0 == 2'b10) & (in_1 == 2'b01) ? 2'b01 :
+(in_0 == 2'b10) & (in_1 == 2'b11) ? 2'b10 :
+(in_0 == 2'b10) & (in_1 == 2'b10) ? 2'b10 :
+2'b00;
 endmodule
 
