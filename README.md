@@ -16,17 +16,17 @@ This chip is a 2-trit asynchronous balanced ternary calculator having 2 function
 3) Drag and drop the chip on the canvas and click on the inputs to see the computations being done in real-time. 
 
 ## FPGA with Digilent Basys3 (Artix-7) and Vivado
--1) [Install Vivado ML Free](https://www.xilinx.com/products/design-tools/vivado.html#editions), [See instructions](https://digilent.com/reference/programmable-logic/guides/installing-vivado-and-vitis)
-0) [Install FPGA Board eg. for Basys3](https://github.com/Digilent/vivado-boards?_ga=2.157791610.1532643487.1683319632-1629076669.1682349043), [manual of Basys3](https://digilent.com/reference/programmable-logic/basys-3/start) 
-1) Create new project, choose FPGA board (eg. Basys3) and set top module name to *c_TT3_BTCalculator*
-2) Add design source, select */src/c_TT03_BTCalculator.v* 
-3) Add simulation source, select */src/c_TT03_BTCalculator_tb.v*
-4) Add constraints, select */src/Basys3_FPGA/basys3_constraints_8x8.xdc*
-5) Run simulation. Confirming that input-output result is 55->96 and 79->db
-6) Run synthesis.
-7) Run implementation.
-8) Generate bitstream and program
-9) Optional: flash the chip permanently by following [these instructions](https://sites.google.com/a/umn.edu/mxp-fpga/home/vivado-notes/programming-the-basys3-boards-non-volatile-flash-memory-through-vivado)
+1) [Install Vivado ML Free](https://www.xilinx.com/products/design-tools/vivado.html#editions), [See instructions](https://digilent.com/reference/programmable-logic/guides/installing-vivado-and-vitis)
+2) [Install FPGA Board eg. for Basys3](https://github.com/Digilent/vivado-boards?_ga=2.157791610.1532643487.1683319632-1629076669.1682349043), [manual of Basys3](https://digilent.com/reference/programmable-logic/basys-3/start) 
+3) Create new project, choose FPGA board (eg. Basys3) and set top module name to *c_TT3_BTCalculator*
+4) Add design source, select */src/c_TT03_BTCalculator.v* 
+5) Add simulation source, select */src/c_TT03_BTCalculator_tb.v*
+6) Add constraints, select */src/Basys3_FPGA/basys3_constraints_8x8.xdc*
+7) Run simulation. Confirming that input-output result is 55->96 and 79->db
+8) Run synthesis.
+9) Run implementation.
+10) Generate bitstream and program
+11) Optional: flash the chip permanently by following [these instructions](https://sites.google.com/a/umn.edu/mxp-fpga/home/vivado-notes/programming-the-basys3-boards-non-volatile-flash-memory-through-vivado)
 
 
 #### Simulation View
@@ -38,6 +38,9 @@ This chip is a 2-trit asynchronous balanced ternary calculator having 2 function
 #### Layout View
 ![Layout View](https://user-images.githubusercontent.com/6376127/236565454-211ef783-918f-40f0-82dd-5fbc2cd9bc4f.png)
 
+## HSPICE
+2do
+
 ## Video
 2do
 
@@ -45,10 +48,6 @@ This chip is a 2-trit asynchronous balanced ternary calculator having 2 function
 ![tt03_BTCalculator](https://user-images.githubusercontent.com/6376127/236537010-23d40e56-3591-4687-bcd3-6532dea8da82.png)
 
 ![GDS (die) shot](https://user-images.githubusercontent.com/6376127/236537573-b82ada43-5148-4762-9e68-377a44ea1426.png)
-
-2do Add HSPICE image
-
-
 
 # What is Tiny Tapeout?
 
