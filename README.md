@@ -11,7 +11,7 @@ This chip is a 2-trit asynchronous balanced ternary calculator having 2 function
 - balanced ternary addition/subtraction 
 
 ## Interactive simulation 
-1) Load MRCS [WebGL](https://ternaryresearch.com/mixed-radix-circuit-synthesizer/) or build [offline] (https://github.com/aiunderstand/MixedRadixCircuitSynthesis)
+1) Load MRCS [WebGL](https://ternaryresearch.com/mixed-radix-circuit-synthesizer/) or build [offline](https://github.com/aiunderstand/MixedRadixCircuitSynthesis)
 2) Click "Import component" and select the TT03_BTCalculator.zip package from this repo
 3) Drag and drop the chip on the canvas and click on the inputs to see the computations being done in real-time. 
 
