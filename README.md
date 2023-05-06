@@ -14,8 +14,9 @@ This chip is a 2-trit asynchronous balanced ternary calculator having 2 function
 
 ## Interactive simulation 
 1) Load MRCS [WebGL](https://ternaryresearch.com/mixed-radix-circuit-synthesizer/) or build [Standalone (Unity C# Project)](https://github.com/aiunderstand/MixedRadixCircuitSynthesis)
-2) Click "Import component" and select the *TT03_BTCalculator.zip* package from this repo
+2) Click "Import component" and select the *src/MRCS/MRCS_Export_TT03-BTCalculator.zip* package from this repo
 3) Drag and drop the chip on the canvas and click on the inputs to see the computations being done in real-time. 
+4) To verify in MRCS, open the chip such that the inputs and outputs are visible. Click verify and upload the *src/Tests/test_tt03-btcalculator.csv*. Wait a few minutes to see a verification result screen.
 
 ## FPGA with Digilent Basys3 (Artix-7) and Vivado
 1) [Install Vivado ML Free](https://www.xilinx.com/products/design-tools/vivado.html#editions), [See instructions](https://digilent.com/reference/programmable-logic/guides/installing-vivado-and-vitis)
