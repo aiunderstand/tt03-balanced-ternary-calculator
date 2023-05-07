@@ -41,7 +41,7 @@ This chip is a 2-trit asynchronous balanced ternary calculator having 2 function
 #### Layout View
 ![Layout View](https://user-images.githubusercontent.com/6376127/236565454-211ef783-918f-40f0-82dd-5fbc2cd9bc4f.png)
 
-## HSPICE (with CNTFET instead of CMOS and with ternary signals instead of binary encoded ternary signals)
+## HSPICE (with CNTFET instead of SKY130 CMOS)
 #### Balanced Ternary (Half) Adder - Heptavintimal index 7PB (SUM) and RDC (CARRY)
 
 ![BTA overview](https://user-images.githubusercontent.com/6376127/236571779-62805118-68e0-48ad-a185-b19569f56a5d.png)
